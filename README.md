@@ -30,7 +30,7 @@ Sistema mobile de controle de estoque desenvolvido com **React Native + Expo** (
 
 ### Backend (API)
 - FastAPI
-- SQL Server (pyodbc)
+- SQL Server conexão por (pyodbc)
 - JWT Authentication
 - Passlib + Jose
 
@@ -39,13 +39,13 @@ Sistema mobile de controle de estoque desenvolvido com **React Native + Expo** (
 ### Backend
 ```bash
 # Ativar ambiente virtual
-C:/Users/enzo/Desktop/estoque-vert/venv/Scripts/Activate.ps1
+/venv/Scripts/Activate.ps1
 
 # Instalar dependências
 pip install -r requirements.txt
 
 # Iniciar servidor
-python -m uvicorn app:app --host 192.168.24.5 --port 8000 --reload
+python -m uvicorn app:app --host seuipdoback --port 8000 
 ```
 
 ### Frontend
@@ -60,8 +60,8 @@ npm start
 ```
 
 ## 🔧 Configuração de Rede
-- **Backend:** http://192.168.24.5:8000
-- **Metro Bundler:** exp://192.168.24.5:8081
+- **Backend:** http://seuip:8000
+- **Metro Bundler:** exp://seuip:8081
 - **Modo:** LAN (necessário para conexão entre dispositivos)
 
 ## 📂 Estrutura do Projeto
